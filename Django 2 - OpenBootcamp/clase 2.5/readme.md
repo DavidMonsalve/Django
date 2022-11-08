@@ -45,7 +45,8 @@ mutando de archivo en archivo, escribimos:
                         {% block VARIABLE %}
 
 Luego, creamos el archivo nuevo (HTML) y para pasarle la plantilla introducimos al comienzo del código:
-                    {% extends './layouts/base.html' %}
+
+                        {% extends './layouts/base.html' %}
 
 Por último para rellenar el contenido de estas variables, en el archivo nuevo podriamos por ejemplo hacer:
 
