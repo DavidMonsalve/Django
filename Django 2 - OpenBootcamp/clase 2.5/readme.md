@@ -1,4 +1,4 @@
-### ARCHIVOS ESTATICOS
+### ARCHIVOS ESTATICOS.
 
 Esta es una parte MUY IMPORTANTE.
 Esta relacionada con como conectamos nuestro template
@@ -25,3 +25,30 @@ template y escribir una "funcion en python" para que permita la carga de archivo
 por ultimo, en head, escribir una etiqueta link y en el href introducir el directorio de nuestro archivo usando sintax de python:
 
 link rel="stylesheet" href="{% static 'style.css' %}"
+
+
+### HERENCIA DE PLANTILLAS.
+
+En todos los apuntes digo lo mismo, pero esto es importantisimo.
+
+Es la solucion para la re-escritura de codigo.
+
+En el directorio "templates", crear una nueva carpeta, para el ejemplo: 
+"layouts", ahi crear la plantilla base.
+
+En esta plantilla base escribiríamos el código que vamos a utilizar en todos
+nuestros demás archivos.
+
+Ahora, para introducir nuestras "variables" por asi llamar al codigo que irá
+mutando de archivo en archivo, escribimos:
+
+                        {% block VARIABLE %}
+
+Luego, creamos el archivo nuevo (HTML) y para pasarle la plantilla introducimos al comienzo del código:
+                    {% extends './layouts/base.html' %}
+
+Por último para rellenar el contenido de estas variables, en el archivo nuevo podriamos por ejemplo hacer:
+
+                            {% block content %}
+                                <h1>Herencias</h1>
+                            {% endblock %}
