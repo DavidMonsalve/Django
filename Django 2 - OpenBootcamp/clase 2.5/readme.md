@@ -58,3 +58,28 @@ Por último para rellenar el contenido de estas variables, en el archivo nuevo p
 
 ### ENLACES E INCLUSIÓN
 
+Bueno, los enlaces se pueden llamar usando su ruta (ruta/),
+pero esto es poco recomendable porque dificulta la legibilidad y
+manipulacion de nuestro código.
+
+Es mejor llamarlos usando el nombre que se le da en el path
+        
+                path('xx/', viws.xx, NAME='xx')
+
+
+para crear enlaces simplemente en el href ponemos:
+
+                href={% url 'herencia'%}
+
+en donde "herencia" vendria siendo el url.
+
+
+EL INCLUDE
+    nos sirve para modularizar dentro de html  
+
+        {% include 'layouts/partials/footer.html' %}
+
+    el anterior, es un ejemplo de como importariamos un trozo de codigo html
+    a nuestro archivo actual
+
+
