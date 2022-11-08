@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Bienvenido a XXXXXXXXXX</li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="perfil">
+            <div class="foto_usuario">{% block imagen %}{% endblock %}</div>
+            <div class="descripcion">
+                <div class="nombre">{% block nombre%}{% endblock %}</div>
+                <div class="datos">
+                    <ul>
+                        <li>Ciudad: {% block ciudad%}{% endblock %}</li>
+                        <li>Nacionalidad: {% block nacionalidad%}{% endblock %}</li>
+                        <li>Edad: {% block edad%}{% endblock %}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer>
+        todos los derechos reservados.
+    </footer>
+</body>
+</html>
