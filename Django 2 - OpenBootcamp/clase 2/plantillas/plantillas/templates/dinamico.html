@@ -8,5 +8,15 @@
 </head>
 <body>
     <h1>Hola {{name}}</h1>
+    <h3>Categorias</h3>
+    <ul>
+        {% for categories in categories %}
+            {%if categories == 'arte' %}
+                <li><b> {{categories }}</b></li>
+            {% else %}
+                <li>{{ categories }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
 </body>
 </html>
