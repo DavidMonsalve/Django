@@ -24,4 +24,4 @@ template y escribir una "funcion en python" para que permita la carga de archivo
 
 por ultimo, en head, escribir una etiqueta link y en el href introducir el directorio de nuestro archivo usando sintax de python:
 
-<link rel="stylesheet" href="{% static 'style.css' %}">
+link rel="stylesheet" href="{% static 'style.css' %}"
