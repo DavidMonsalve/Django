@@ -13,8 +13,9 @@ incluir en nuestro template.
 
 Luego, en settings, abajo de "STATIC_URL", agregar:
 
- STATICFILES_DIRS = [
+STATICFILES_DIRS = [
     BASE_DIR / "static",
+    '/var/www/static',
 ]
 
 Para vincular definitivamente el template del archivo, hay que ir al head del
@@ -53,3 +54,7 @@ Por último para rellenar el contenido de estas variables, en el archivo nuevo p
                             {% block content %}
                                 <h1>Herencias</h1>
                             {% endblock %}
+
+
+### ENLACES E INCLUSIÓN
+
