@@ -1,0 +1,33 @@
+{% extends './layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>Contact</h1>
+    <div id="contact-divs">
+        <div class="contact-div contact-div-1">
+            <h2>social media: </h2>
+            <ul>
+                <li><a href="#"><img src="{% static '/img/insta-logo.png' %}" alt="">    </a></li>
+                <li><a href="#"><img src="{% static '/img/git-logo.png' %}" alt="">    </a></li>
+                <li><a href="#"><img src="{% static '/img/link-logo.png' %}" alt="">    </a></li>
+                <li><a href="#"><img src="{% static '/img/w-logo.png' %}" alt="">    </a></li>
+            </ul>
+        </div>
+
+        <div class="contact-div contact-div-2">
+            <h2>Direct message: </h2>
+            <form action="" class="form-contact">
+                <div class="nombre-contact">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Last Name">
+                </div>    
+                <div class="info-contact">
+                    <input type="text" placeholder="Subject">
+                    <input type="text" placeholder="Message">
+                    <input type="text" placeholder="Your email (if response is expected).">
+                </div>
+                <a href=""><button>Submit</button></a>
+            </form>
+        </div>
+    </div>
+{% endblock %}

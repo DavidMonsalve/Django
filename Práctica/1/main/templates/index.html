@@ -1,0 +1,24 @@
+{% extends './layouts/base.html' %}
+
+{% load static %}
+{% block content %}
+        <div class="index-1">
+                <h2>HEY, THERE!</h2>                
+                <br>
+                <h1>I'M DAVID MONSALVE</h1>
+                <br>
+                <h3>JR SOFTWARE DEVELOPER</h3>
+                <br>
+                <ul class="index-logos">
+                        <li class="index-logos-li"><a href="#"><i class='fa fa-instagram' style='color: white'></i></a></li>
+                        <li class="index-logos-li"><a href="#"><i class='fa fa-github' style='color: white'></i></a></li>
+                        <li class="index-logos-li"><a href="#"><i class='fa fa-telegram' style='color: white'></i></a></li>
+                        <li class="index-logos-li"><a href="#">
+                                <i class='fa fa-mail-reply' style='color: white'></i></a></li>
+                </ul>
+        </div>
+        <div class="boton-myprojects">
+                <button><a href="{% url 'projects' %}">My projects</a></button>
+                
+        </div>
+{% endblock %}

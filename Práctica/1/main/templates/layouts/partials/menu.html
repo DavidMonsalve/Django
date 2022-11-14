@@ -1,0 +1,16 @@
+{% load static %}
+<nav>
+    <a href="{% url 'index' %}" class="logo-a"><img src="{% static '/img/logo2.png' %}" alt=""></a>
+    <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'projects' %}">Projects</a></li>
+        <li><a href="{% url 'blog' %}">Blog</a></li>
+    </ul>
+    <ul>
+        <a href="{% url 'contact'%}" class="boton-contact-box"><li class="boton-contact">Contact</li></a>
+    </ul>
+</nav>
+<br>
+<hr class="barrita">
+<br>

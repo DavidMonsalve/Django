@@ -1,0 +1,324 @@
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(129, 126, 126);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    color: white;
+}
+
+h3{
+    color: orangered;
+}
+
+header{
+    height: 20vh;
+    width: 100%;
+    background-color: #000;
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo-a {
+    height: 98%;
+    width: 7%;
+}
+nav a img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    padding: 5%;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: orangered;
+}
+
+.boton-contact{
+    color: white;
+    background-color: orangered;
+}
+
+.boton-contact-box {
+    width: 80%;
+    height: 80%;
+    padding: 25px;
+}
+
+.boton-contact{
+    height: 100%;
+    width: 200%;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;    
+}
+
+.barrita{
+    height: 1px;
+    width: 100%;
+    background-color: white;
+}
+
+.b-2{
+    width: 98%;
+    position: absolute;
+    margin-left: 0%;
+}
+
+main {
+    height: 75vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+main div{
+    margin: 2%;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main div ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    height: 100%;
+}
+
+main div ul .fa{
+    color: blue;
+}
+
+main .index-1 .index-logos .index-logos-li{
+    margin: 25%;
+}
+
+main div button {
+    background-color: orangered;
+    border-radius: 100px;
+    height: 100%;
+    width: 40%;
+}
+
+.boton-myprojects{
+    position: relative;
+    height: 5%;
+}
+
+main div button a{
+    background-color: orangered;
+ }
+
+
+
+
+
+
+#contact-divs {
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+}
+
+.contact-div{
+    height: 100%;
+    width: 100%;
+}
+
+
+.contact-div ul {
+    width: 100%;
+    height: 50%;
+    /* background-color: aqua; */
+}
+.contact-div ul li a{
+    height: 100%;
+    width: 100%;
+    margin-right: 50%;
+    /* background-color: red; */
+}
+
+.contact-div-1 ul li a img {
+    margin-top: 25%;
+    height: 60%;
+    width: 100%;
+}
+
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.form-contact input{
+    padding: 5px;
+    margin: 5px;
+}
+
+.form-contact a button{
+    margin: 5%;
+    width: 100%;
+    height: 50%;
+}
+
+.form-contact a{
+    display: flex;
+    justify-content: center;
+}
+
+.nombre-contact{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.info-contact input{
+    width: 100%;
+}
+
+
+
+
+/*                                     projects                                                                 */
+main .tarjetas{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+main .tarjetas .tarjetas-fila-1 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.tarjetas .tarjetas-fila-1 .card{
+    width: 25%;
+    height: 120%;
+
+    border-width:2px;
+    border-style:solid;
+    border-color:white;
+}
+
+.tarjetas .tarjetas-fila-1 .card .card-img{
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+}
+
+
+
+/*                                     projects                                                                 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                                     about me                                                                     */
+.about-title{
+    margin-top: 0%;
+    color: orangered;
+}
+main .about-me {
+    height: 70%;
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: black;
+}
+
+main .about-me .about {
+    height: 80%;
+    width: 30%;
+    background-color: black;
+}
+
+.ab-1 {
+    background-color: black;
+}
+
+.ab-1 img {
+    height: 80%;
+    width: 55%;
+    border-radius: 250px;
+}
+
+.about-button {
+    height: 30%;
+    width: 100%;
+}
+
+.ab-2 .cv-button{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+}
+
+.ab-2 .cv-button button {
+    height: 30%;
+    width: 40%;
+    background-color: orangered;
+}
+
+
+
+/*                                     about me                                                                     */
+
+footer{
+    height: 20vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
